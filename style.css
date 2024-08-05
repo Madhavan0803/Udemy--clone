@@ -14,11 +14,14 @@ body{
 .s-serious{
     padding: 10px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     border-bottom: solid black 1px;
     gap: 20px;
     align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
 }
 
 .s1-tittle{
@@ -38,6 +41,7 @@ body{
     border: none;
     font-size: 17px;
     width: 100%;
+    background-color: transparent;
 }
 
 .s2 input:focus{
@@ -47,6 +51,27 @@ body{
 .s3{
     display: flex;
     gap: 20px;
+}
+
+.myLearning{
+    position: relative;
+    cursor: pointer;
+}
+
+.myLearning__popup{
+    position: absolute;
+    background-color: white;
+    width: 100px;
+    padding: 20px;
+    top:150%;
+    right: 0;
+    border-radius: 10px;
+    border: solid black 1px;
+    display: none;
+}
+
+.myLearning:hover .myLearning__popup{
+    display: block;
 }
 
 .a-serious{
@@ -68,9 +93,21 @@ body{
     padding-bottom: 5px;
 }
 
+.img1 img{
+    width: 100%;
+}
+
 .img1{
-    text-align: center;
-    flex-wrap: wrap;
+    position: relative;
+}
+
+.sale-image__offer{
+    background-color: orange;
+    width: fit-content;
+    padding: 20px;
+    position: absolute;
+    top: 10%;
+    left: 10%;
 }
 
 .b-serious{
